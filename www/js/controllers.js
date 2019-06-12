@@ -1,8 +1,7 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {
+.controller('DashCtrl', function($rootScope,$scope,$http) {
   var pokemon = angular.module("pokemon",[])
-pokemon.controller("pokedex",function($rootScope,$scope,$http){
   $scope.pokedexB = [];
   for (var i = 0; i <= 100; i++) {
     $http({
@@ -14,7 +13,6 @@ pokemon.controller("pokedex",function($rootScope,$scope,$http){
 }
 })
 
-})
 
 .controller('ChatsCtrl', function($scope, Chats) {
   // With the new view caching in Ionic, Controllers are only called
