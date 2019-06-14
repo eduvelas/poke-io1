@@ -1,1 +1,25 @@
-/* Empty. Add your own CSS if you like */
+ion-content{
+	background-color: #004d61;
+}
+.cua {
+	background-color: #c1f6e7;
+	color: #FFFF;
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 50px;
+}
+img {
+	width: 300px;
+}
+p {
+	background-color: #009975;
+	padding: 20px;
+}
+
+/*-------------mapa-------------*/
+ion-list {
+	text-align: center;
+}
+
+/*------------noticias------------*/
+

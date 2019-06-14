@@ -3,7 +3,7 @@ angular.module('starter.controllers', [])
 .controller('DashCtrl', function($rootScope,$scope,$http) {
   var pokemon = angular.module("pokemon",[])
   $scope.pokedexB = [];
-  for (var i = 0; i <= 100; i++) {
+  for (var i = 0; i <= 200; i++) {
     $http({
     method: "GET",
     url: "https://pokeapi.co/api/v2/pokemon/"+i
@@ -15,18 +15,7 @@ angular.module('starter.controllers', [])
 
 
 .controller('ChatsCtrl', function($scope, Chats) {
-  // With the new view caching in Ionic, Controllers are only called
-  // when they are recreated or on app start, instead of every page change.
-  // To listen for when this page is active (for example, to refresh data),
-  // listen for the $ionicView.enter event:
-  //
-  //$scope.$on('$ionicView.enter', function(e) {
-  //});
-
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  };
+  
 })
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
@@ -34,7 +23,5 @@ angular.module('starter.controllers', [])
 })
 
 .controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
+  
 });
